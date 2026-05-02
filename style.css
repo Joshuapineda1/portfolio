@@ -426,3 +426,71 @@ ul {
   opacity: 0.55;
 }
 
+/* ============================================
+   ABOUT
+   ============================================ */
+.about {
+  padding: 7rem var(--pad);
+  max-width: var(--max-w);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: start;
+  border-top: 1px solid var(--border);
+}
+
+.about-text p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--fg-muted);
+  line-height: 1.75;
+  margin-bottom: 1rem;
+}
+
+.about-text .btn-primary {
+  margin-top: 1rem;
+}
+
+.about-text .section-title {
+  margin-bottom: 1.75rem;
+}
+
+.about-skills {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-top: 2.5rem;
+}
+
+.skill-group-title {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--fg-muted);
+  margin-bottom: 0.75rem;
+}
+
+.skill-group ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.skill-group li {
+  font-size: 0.95rem;
+  font-weight: 300;
+  color: var(--fg);
+  padding-left: 1rem;
+  position: relative;
+}
+
+.skill-group li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--border);
+}
+
